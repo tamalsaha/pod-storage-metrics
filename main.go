@@ -50,7 +50,7 @@ func run() error {
 	}
 
 	var nodes core.NodeList
-	err = c.List(context.TODO(), &nodes)
+	err = kc.List(context.TODO(), &nodes)
 	if err != nil {
 		panic(err)
 	}
